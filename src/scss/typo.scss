@@ -1,0 +1,10 @@
+body {
+  font-family: $font_family;
+  font-weight: $font_weight;
+  font-size: $font_size_mobile;
+  color: $font_color;
+  line-height: 1.5;
+  @media (min-width: 768px) {
+    font-size: $font_size;
+  }
+}

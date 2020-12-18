@@ -1,0 +1,55 @@
+*::-webkit-input-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+.form-control {
+  border: $input_border;
+  background-color: $input_bg;
+  border-radius: $input_border_radius;
+  padding: 20px;
+  color: $input_txt_color;
+  font-family: $input_txt_family;
+  font-size: $input_txt_size;
+  line-height: $input_txt_lh;
+  font-weight: 400;
+  &:hover {}
+  &:focus {
+    box-shadow: none;
+  }
+  &::placeholder {}
+  &.form-control_header {
+    padding: 8px;
+    border: none;
+    &:hover {}
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+input.form-control {
+  &.form-control_header {
+    height: 40px;
+  }
+}
+
