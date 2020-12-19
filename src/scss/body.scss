@@ -3,6 +3,8 @@ body {
 }
 
 .container {
+  //disable modile containers for test
+  max-width: 1110 + $grid-gutter-width;
   @media (min-width: 1500px) {
     max-width: $container-xxl + $grid-gutter-width;
   }

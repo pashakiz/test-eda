@@ -53,3 +53,117 @@ input.form-control {
   }
 }
 
+
+.autocomplete {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  .autocomplete-list {
+    background: #FFFFFF;
+    box-shadow: 2px 6px 20px rgba(119, 119, 119, 0.18);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    .autocomplete-list__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 9px;
+      cursor: pointer;
+      &:hover {
+        color: #707070;
+      }
+    }
+    .autocomplete-list__iconbox {
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+      min-height: 24px;
+      background: #EEEEEE;
+      border-radius: 100%;
+      margin-right: 13px;
+      position: relative;
+    }
+    .autocomplete-list__icon {
+      width: 21px;
+      height: 21px;
+      fill: #585858;
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
+    }
+    .autocomplete-list__txt {
+      font-family: $font_family;
+      font-weight: $font_weight;
+      font-size: 16px;
+      line-height: 24px;
+      color: #979797;
+      strong {
+        font-weight: bolder;
+        color: #000;
+      }
+    }
+  }
+}
+
+.inputwrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.inputwrap__input {
+  width: 100%;
+  padding: 8px 64px 8px 51px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  color: #979797;
+  font-family: $font_family;
+  font-weight: $font_weight;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+}
+.inputwrap__input::placeholder {
+  color: #979797;
+  opacity: 1;
+}
+.inputwrap__iconbox {
+  width: 31px;
+  height: 30px;
+  position: absolute;
+  left: 12px;
+  top: 5px;
+}
+.inputwrap__icon {
+  width: 31px;
+  height: 30px;
+  fill: #585858;
+}
+.inputwrap__close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 13px;
+  top: 5px;
+  &:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: 29px;
+  }
+}
+.inputwrap__close-icon {}
+
