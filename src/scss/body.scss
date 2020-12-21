@@ -4,14 +4,12 @@ body {
 
 //disable modile containers for test
 .body_no-mobile {
-  width: 1600px;
   min-width: 1600px;
   .container {
     max-width: $container-xxl + $grid-gutter-width;
     width: $container-xxl + $grid-gutter-width;
   }
   .footer {
-    width: 1600px;
     min-width: 1600px;
   }
 }
